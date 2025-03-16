@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astrology Web App</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Astrology Birth Chart Generator</h1>
+    <form id="birthDataForm">
+      <label for="birthDate">Birth Date:</label>
+      <input type="date" id="birthDate" required>
+
+      <label for="birthTime">Birth Time:</label>
+      <input type="time" id="birthTime" required>
+
+      <label for="birthLocation">Birth Location:</label>
+      <input type="text" id="birthLocation" placeholder="City, Country" required>
+
+      <button type="submit">Generate Chart</button>
+    </form>
+
+    <div id="chartContainer">
+      <canvas id="birthChart"></canvas>
+    </div>
+
+    <div id="interpretations">
+      <h2>Planetary Interpretations</h2>
+      <ul id="interpretationList"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
